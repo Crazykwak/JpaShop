@@ -3,14 +3,15 @@ package jpabook.jpashap.repository;
 import jpabook.jpashap.entity.item.Item;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import java.util.List;
 
-@Entity
-@RequiredArgsConstructor
+@Repository
 @Getter
+@RequiredArgsConstructor
 public class ItemRepository {
 
     private final EntityManager em;
